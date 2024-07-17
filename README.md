@@ -19,7 +19,7 @@ singularity shell /path/to/hicov.sif/hicov.sif
      
 3. Run the hicov.sh script:
 ```
-bash hicov.sh reference /path/to/.fastq.gz
+bash hicov.sh hcov_nl63 /path/to/data.fastq.gz
 ```
 
 
