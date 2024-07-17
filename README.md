@@ -24,7 +24,7 @@ bash hicov.sh hcov_nl63 /path/to/data.fastq.gz
 
 
 Best use example:
-1. To avoid issues with data naming, follow the convention in example:
+1. To avoid issues with data naming, follow the convention in example (sample name should include only "-" and "_" delimits reads orientation):
    - hcov-0001_R1.fastq.gz
    - hcov-0001_R2.fastq.gz
    - ...
