@@ -2,7 +2,7 @@
 Bioinformatic pipeline for HCoV project (IMI MF UL and Hiscox Lab UL)
 
 Prerequisites:
-- Singularity
+- Singularity (https://singularity-tutorial.github.io/01-installation/)
 
 Usage:
 1. Build the Singularity container:
@@ -20,7 +20,7 @@ singularity shell /path/to/hicov.sif/hicov.sif
 bash hicov.sh reference /path/to/.fastq.gz
 ```
 
-Best use example
+Best use example:
 1. To avoid issues with data naming, follow the convention in example:
    - hcov-0001_R1.fastq.gz
    - hcov-0001_R2.fastq.gz
