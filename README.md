@@ -12,12 +12,12 @@ Usage:
 sudo singularity build hicov.sif 20240710_hicov.def
 singularity build --fakeroot hicov.sif 20240710_hicov.def #if no sudo privileges
 ```
-3. Enter hicov.sif:
+2. Enter hicov.sif:
 ```
 singularity shell /path/to/hicov.sif/hicov.sif
 ```
      
-5. Run the hicov.sh script:
+3. Run the hicov.sh script:
 ```
 bash hicov.sh reference /path/to/.fastq.gz
 ```
