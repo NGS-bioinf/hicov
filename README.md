@@ -22,6 +22,7 @@ singularity shell /path/to/hicov.sif/hicov.sif
 bash hicov.sh reference /path/to/.fastq.gz
 ```
 
+
 Best use example:
 1. To avoid issues with data naming, follow the convention in example:
    - hcov-0001_R1.fastq.gz
