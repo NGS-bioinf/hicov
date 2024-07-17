@@ -1,7 +1,7 @@
 # hicov
 Bioinformatic pipeline for HCoV project (IMI MF UL and Hiscox Lab UL)
 
-If in doubt write alen.suljic@mf.uni-lj.si
+When in doubt, write alen.suljic@mf.uni-lj.si
 
 Prerequisites:
 - Singularity (https://singularity-tutorial.github.io/01-installation/)
