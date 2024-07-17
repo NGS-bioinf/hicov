@@ -24,16 +24,17 @@ bash hicov.sh hcov_nl63 /path/to/data.fastq.gz
 
 
 Best use example:
-1. To avoid issues with data naming, follow the convention in example (sample name should include only "-" and "_" delimits reads orientation):
+1. To avoid issues with data naming, follow the convention in example (sample name should include only "-".
+Read orientation is delimited by "_".):
    - hcov-0001_R1.fastq.gz
    - hcov-0001_R2.fastq.gz
    - ...
   
-2. Create a directory where desired.
-3. Copy the hicov.sh script and "reference" directory to created directory
-4. Enter hicov.sif container
-5. Optional: If required, open the hicov.sh with your favourite text editor and adjust pipeline parameters (thread count, quality settings, etc...)
-6. Run the hicov.sh script. The script takes reference name as positional argument 1 and input data (fastq.gz) directory as positional argument 2.
-7. Additional information is provided in header section in hicov.sh script.
+3. Create a directory where desired.
+4. Copy the hicov.sh script and "reference" directory to created directory
+5. Enter hicov.sif container
+6. Optional: If required, open the hicov.sh with your favourite text editor and adjust pipeline parameters (thread count, quality settings, etc...)
+7. Run the hicov.sh script. The script takes reference name as positional argument 1 and input data (fastq.gz) directory as positional argument 2.
+8. Additional information is provided in header section in hicov.sh script.
    
 
