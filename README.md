@@ -6,17 +6,19 @@ Prerequisites:
 
 Usage:
 1. Build the Singularity container:
-   
 ```
 sudo singularity build hicov.sif 20240710_hicov.def
-singularity build --fakeroot hicov.sif 20240710_hicov.def (if no sudo privileges)
-
+singularity build --fakeroot hicov.sif 20240710_hicov.def #if no sudo privileges
 ```
 3. Enter hicov.sif:
-   - singularity shell /path/to/hicov.sif/hicov.sif
+```
+singularity shell /path/to/hicov.sif/hicov.sif
+```
      
-4. Run the hicov.sh script:
-   - bash hicov.sh reference /path/to/.fastq.gz
+5. Run the hicov.sh script:
+```
+bash hicov.sh reference /path/to/.fastq.gz
+```
   
 Notes:
 1. To avoid issues with data naming, follow the convention in example:
