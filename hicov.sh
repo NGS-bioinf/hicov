@@ -137,6 +137,29 @@ for i in $(cat samples); do
 
 done
 
+## Generate mapping stats report
+
+echo "Generating mapping statistics report"
+
+mkdir -p results
+
+echo -e "sample\trname\tstartpos\tendpos\tnumreads\tcovbases\tcoverage\tmeandepth\tmeanbaseq\tmeanmapq\tr1_nreads\tr2_nreads" > results/mapstats.tsv
+
+for i in $(cat samples); do
+
+  sample="${i}"
+
+  first_line=$(head -n 1 stats/${sample}_stats.log)
+  
+  nineteenth_line=$(sed -n '19p' stats/${sample}_stats.log)
+
+  r1_nreads=$(gunzip -c trimmed/${sample}_trim_R1.fastq.gz | awk '{s++}END{print s/4}')
+  r2_nreads=$(gunzip -c trimmed/${sample}_trim_R2.fastq.gz | awk '{s++}END{print s/4}')
+  
+  echo -e "$first_line\t$nineteenth_line\t$r1_nreads\t$r2_nreads" >> results/mapstats.tsv
+  
+done
+
 # Generate Consensus sequence
 ## threshold for consensus 0.5, depth 10
 echo "Generating consensus sequence"
@@ -215,8 +238,9 @@ tr '\t' ',' < results/coverage.tsv > results/coverage.csv
 rm results/coverage.tsv
 
 # Cleanup
-mv experiment.log results/
-mv samples results/
+mkdir -p logs
+mv experiment.log logs/
+mv samples logs/
 
 
 echo "Analysis complete"
