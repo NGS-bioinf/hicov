@@ -15,7 +15,7 @@ From: ubuntu:22.04
 %post
 	apt-get -y update && apt-get -y upgrade
 	apt autoremove
-    apt install --fix-missing --install-recommends -y lsb-release curl wget apt-transport-https zlib1g-dev tar bzip2 gzip xz-utils unzip ca-certificates git perl make gcc libbz2-dev libssl-dev default-jdk default-jre nano
+    	apt install --fix-missing --install-recommends -y lsb-release curl wget apt-transport-https zlib1g-dev tar bzip2 gzip xz-utils unzip ca-certificates git perl make gcc libbz2-dev libssl-dev default-jdk default-jre nano
 
   	cd /opt
   	curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
