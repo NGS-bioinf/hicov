@@ -37,4 +37,6 @@ Read orientation is delimited by "_".):
 6. Run the hicov.sh script. The script takes reference name as positional argument 1 and input data (fastq.gz) directory as positional argument 2.
 7. Additional information is provided in header section in hicov.sh script.
    
+# micov
 
+micov is an ONT counterpart of hicov. It follows the exact same logic, with the exception of raw read naming convention (hcov-0001.fastq.gz, instead of hcov-0001_R1.fastq.gz).
