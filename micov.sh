@@ -20,7 +20,7 @@
 # 2. Make sure that "data" directory with renamed barcodes (use rename_barcodes.sh).
 # 3. Reference directory must contain "reference_'amplicon-length'.fasta", "reference_'amplicon-length'.gff3" and "reference_'amplicon-length'.primer.bed" files!
 # 4. Take care to include amplicon length when inputing reference file name (e.g. hcov_229e_1000)!
-# 4. The script is run inside dedicated singularity container "glamdring.sif".
+# 4. The script is run inside dedicated singularity container "micov.sif".
 # 5. Before running the script, adjust the parameters according to ONT output summary!
 
 # Command example:
